@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">Hello,I'm Nguyễn Hữu Quyết</div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="scroll-link">Trang Chủ</a></li>
+                <li><a href="#skills" class="scroll-link">Kỹ Năng</a></li>
+                <li><a href="#projects" class="scroll-link">Dự Án</a></li>
+                <li><a href="#contact" class="scroll-link">Liên Hệ</a></li>
+            </ul>
+
+            <div style="display: flex; gap: 10px; align-items: center;">
+                <button id="themeToggle" class="btn">Dark Mode</button>
+                <button id="hamburgerBtn" class="hamburger">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero container">
+            <h1>Hello everyone, I'm Nguyễn Hữu Quyết</h1>
+            <p>Lập trình viên Web Front-End đam mê tạo ra các sản phẩm web thiết thực.</p>
+        </section>
+
+        <section id="skills" class="container">
+            <h2 class="section-title">Kỹ Năng Của Tôi</h2>
+            <div class="skills-grid">
+                <div class="skill-box">HTML</div>
+                <div class="skill-box">CSS</div>
+                <div class="skill-box">JS</div>
+                <div class="skill-box">Python</div>
+            </div>
+        </section>
+
+        <section id="projects" class="container">
+            <h2 class="section-title">Danh Sách Dự Án</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://placehold.co/400x200/007bff/ffffff?text=To+Do+List" alt="To Do List">
+                    <div class="project-info">
+                        <h3>To Do List</h3>
+                        <p>Ứng dụng quản lý công việc hàng ngày cá nhân sử dụng JavaScript.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://placehold.co/400x200/007bff/ffffff?text=Web+Portfolio" alt="Web Portfolio">
+                    <div class="project-info">
+                        <h3>Web Portfolio</h3>
+                        <p>Trang web cá nhân giới thiệu thông tin, kỹ năng và các dự án đã làm.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://placehold.co/400x200/007bff/ffffff?text=Drink+Shop+Management" alt="Drink Shop Management">
+                    <div class="project-info">
+                        <h3>Web Quản Lý Cửa Hàng Đồ Uống</h3>
+                        <p>Hệ thống quản lý thực đơn, đặt món và tính tiền cho cửa hàng đồ uống.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container">
+            <h2 class="section-title">Liên Hệ Với Tôi</h2>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Họ và tên *</label>
+                    <input type="text" id="name" placeholder="Nhập tên của bạn">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" placeholder="Nhập email của bạn">
+                </div>
+                <div class="form-group">
+                    <label for="message">Nội dung *</label>
+                    <textarea id="message" rows="4" placeholder="Nhập nội dung tin nhắn"></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Gửi Tin Nhắn</button>
+                <div id="form-message"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Hello I am Quyết. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
